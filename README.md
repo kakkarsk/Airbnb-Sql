@@ -56,11 +56,11 @@ The cheapest time to visit Austin is in March and April.
 
 Select
 	
-    price,
+     price,
 	
-    date1,
+     date1,
 	
-    available
+     available
 
 From
 	
@@ -68,7 +68,7 @@ From
 
 Where
 	
-    available == 't'
+     available == 't'
 
 Group by
 	
@@ -82,15 +82,15 @@ Order by
  
  Select
 	
-    available,
+     available,
 	
-    date1,
+     date1,
 	
-    count(*) as rooms
+     count(*) as rooms
 
 from
 	
-   calendar
+    calendar
 
 Where
 	
