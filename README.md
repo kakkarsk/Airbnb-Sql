@@ -56,51 +56,51 @@ The cheapest time to visit Austin is in March and April.
 
 Select
 	
-  price,
+   price,
 	
-  date1,
+   date1,
 	
-  available
+   available
 
 From
 	
-  calendar c
+   calendar c
 
 Where
 	
-   available == 't'
+    available == 't'
 
 Group by
 	
-   date1
+    date1
 
 Order by
 	
-   price
+    price
    
  -- The busiest time for AirBnB in Austin is in March - specifically when the SXSW conference is in 
  
  Select
 	
-  available,
+   available,
 	
-  date1,
+   date1,
 	
-  count(*) as rooms
+   count(*) as rooms
 
 from
 	
-  calendar
+   calendar
 
 Where
 	
-   available = 'f'
+    available = 'f'
 
 Group by
 	
-   date1
+    date1
 
 Order by
 	
-   rooms desc
+    rooms desc
 
